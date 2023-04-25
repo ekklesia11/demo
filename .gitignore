@@ -1,0 +1,11 @@
+# local, vscode
+.DS_store
+.vscode
+
+# node modules
+node_modules
+
+# packages
+yarn.lock
+
+out/
