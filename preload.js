@@ -1,9 +1,9 @@
 const { contextBridge, ipcRenderer } = require('electron');
 
-contextBridge.exposeInMainWorld('versions', {
-  node: () => process.versions.node,
-  chrome: () => process.versions.chrome,
-  electron: () => process.versions.electron,
-  ping: () => ipcRenderer.invoke('ping'),
-  // we can also expose variables, not just functions
+contextBridge.exposeInMainWorld('linkedIn', {
+  login: (email, password) => ipcRenderer.send('login', email, password),
+  linkedInLogin: () => ipcRenderer.invoke('linkedInLogin'),
+  loginResponse: (callback) => ipcRenderer.on('loginResponse', callback),
+  loggedIn: (callback) => ipcRenderer.on('loggedIn', callback),
+  message: (callback) => ipcRenderer.on('message', callback),
 });

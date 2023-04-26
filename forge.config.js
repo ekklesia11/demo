@@ -5,8 +5,8 @@ module.exports = {
     {
       name: '@electron-forge/maker-squirrel',
       config: {
-        authors: 'Secondme',
-        description: 'An example Electron app',
+        // authors: 'Secondme',
+        // description: 'An example Electron app',
       },
     },
     {
@@ -20,6 +20,19 @@ module.exports = {
     {
       name: '@electron-forge/maker-rpm',
       config: {},
+    },
+  ],
+  publishers: [
+    {
+      name: '@electron-forge/publisher-github',
+      config: {
+        repository: {
+          owner: 'ekklesia11',
+          name: 'demo',
+        },
+        prerelease: false,
+        draft: true,
+      },
     },
   ],
 };

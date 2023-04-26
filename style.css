@@ -1,0 +1,60 @@
+h1 {
+  font-style: italic;
+}
+
+.top-section {
+  text-align: center;
+}
+
+.top-section > div {
+  margin-bottom: 8px;
+}
+
+.text-input {
+  border-radius: 8px;
+  padding: 2px 4px;
+  width: 200px;
+  height: 24px;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#linkedin {
+  padding: 16px 8px;
+  border-radius: 8px;
+  width: 200px;
+  height: 24px;
+  font-weight: 700;
+}
+
+#loggedIn {
+  text-align: center;
+}
+
+#prompt {
+  padding: 12px 8px;
+}
+
+#message {
+  margin-top: 24px;
+
+  padding: 12px 8px;
+}
+
+.message-line {
+  margin: 8px auto;
+}
+
+.box-orange {
+  border: 2px solid #fcae1e;
+  border-radius: 12px;
+}
+
+.box-blue {
+  border: 2px solid #006dc8;
+  border-radius: 12px;
+}

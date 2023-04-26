@@ -10,12 +10,41 @@
       http-equiv="X-Content-Security-Policy"
       content="default-src 'self'; script-src 'self'"
     />
+    <link
+      rel="stylesheet"
+      href="style.css"
+    />
     <title>Secondme</title>
   </head>
   <body>
-    <h1>Hello World</h1>
-    <p>New "Secondme" project started!</p>
-    <p id="info"></p>
+    <div class="top-section">
+      <h1>🗣️ Secondme DEMO</h1>
+      <div>
+        <input
+          id="linkedin-email"
+          class="text-input"
+          type="email"
+        />
+      </div>
+      <div>
+        <input
+          id="linkedin-password"
+          class="text-input"
+          type="password"
+        />
+      </div>
+      <div class="flex-center">
+        <button
+          id="linkedin"
+          class="flex-center"
+        >
+          LinkedIn Login
+        </button>
+      </div>
+    </div>
+    <p id="loggedIn"></p>
+    <p id="prompt"></p>
+    <div id="message"></div>
   </body>
   <script src="./renderer.js"></script>
 </html>
